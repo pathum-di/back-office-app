@@ -1,0 +1,43 @@
+{
+  "users": [
+    { "id": 1, "email": "admin@example.com", "password": "password123" }
+  ],
+  "categories": [
+    { "id": 1, "name": "Electronics" },
+    { "id": 2, "name": "Laptops", "parent_id": 1 },
+    { "id": 3, "name": "Smartphones", "parent_id": 1 },
+    { "id": 4, "name": "Home Appliances" },
+    { "id": 5, "name": "Refrigerators", "parent_id": 4 }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "MacBook Pro 14",
+      "category_id": 2,
+      "attributes": [
+        { "code": "brand", "value": "Apple", "type": "text" },
+        { "code": "processor", "value": "M2 Pro", "type": "text" },
+        { "code": "ram", "value": 16, "type": "number" },
+        { "code": "storage", "value": "512GB SSD", "type": "text" }
+      ],
+      "updated_at": "2025-03-23T12:00:00Z"
+    },
+    {
+      "id": 102,
+      "name": "Dell XPS 13",
+      "category_id": 2,
+      "attributes": [
+        { "code": "brand", "value": "Dell", "type": "text" },
+        { "code": "processor", "value": "Intel i7", "type": "text" },
+        { "code": "ram", "value": 16, "type": "number" },
+        { "code": "storage", "value": "1TB SSD", "type": "text" }
+      ],
+      "updated_at": "2025-03-22T15:30:00Z"
+    }
+  ],
+  "lastModifiedProduct": {
+    "id": 101,
+    "name": "MacBook Pro 14",
+    "updated_at": "2025-03-23T12:00:00Z"
+  }
+}
